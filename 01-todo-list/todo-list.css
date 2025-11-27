@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("bg.jpeg");  /* update path if image is in a folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  background: rgb(185, 96, 6);
+  border-radius: 3px;
+  padding: 25px;
+}
+
+.box{
+  display: flex;
+  gap: 10px;
+}
+input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.add-btn {
+  padding: 10px;
+  background: rgb(10, 134, 134);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.add-btn:hover{
+     background: rgb(25, 99, 99);
+
+}
+
+.text{
+  color:azure;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+li {
+  margin-top: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+li:hover{
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+}
+
+.delete-btn {
+  padding: 4px 9px;
+  background: rgb(206, 40, 40);
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background: red;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
+
+@media(max-width: 375px) {
+  
+.container {
+  width: 90%;
+}
+}
