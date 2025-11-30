@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Bill Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Simple Bill Generator</h1>
+
+      <section class="customer-section">
+        <h2>Customer Details</h2>
+
+        <div class="customer-inputs">
+          <label for="">Customer Name</label>
+          <input
+            type="text"
+            class="customer-name-input"
+            placeholder="Enter Customer Name"
+          />
+
+          <label for="">Tax %</label>
+          <input type="number" class="tax-percent-input" placeholder="Enter Tax Percentage" />
+        </div>
+      </section>
+
+      <section class="item-section">
+        <h2>Add Items</h2>
+        <div class="item-inputs">
+            <label for="">Item Name</label>
+            <input type="text" class="item-name-input" placeholder="Item Name" />
+
+            <label for="">Quantity</label>
+            <input type="number" class="quantity-input" placeholder="Quantity" />
+
+            <label for="">Price per Unit</label>
+            <input type="number" class="price-input" placeholder="Price" />
+
+          <button class="add-item">Add Item</button>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+
+          <tbody class="table-body"></tbody>
+        </table>
+      </section>
+
+      <section class="summary-section">
+        <h2>Bill Summary</h2>
+        <p class="subtotal">Subtotal: 0.00</p>
+        <p class="tax-amount">Tax Amount: 0.00</p>
+        <p class="final-total">Final Total: 0.00</p>
+      </section>
+
+      <section class="actions-section">
+        <button class="print-bill">Print Bill</button>
+        <button class="clear-all">Clear All</button>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
