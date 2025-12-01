@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Password Generator</h2>
+
+    <!-- Password Box -->
+    <div class="password-box">
+      <input type="text" readonly class="password-output" placeholder="CLICK GENERATE">
+    </div>
+
+    <!-- Length Section -->
+    <div class="section">
+      <label class="label-top">LENGTH: <span class="length-value">16</span></label>
+      <div class="slider-row">
+        <span>4</span>
+        <input type="range" min="4" max="32" value="16" class="length-slider">
+        <span>32</span>
+      </div>
+    </div>
+
+    <!-- Settings -->
+    <div class="settings-title">SETTINGS</div>
+
+    <div class="settings">
+
+      <div class="setting-row">
+        <span>Include Uppercase</span>
+        <label class="switch">
+          <input type="checkbox" class="uppercase-option" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <span>Include Lowercase</span>
+        <label class="switch">
+          <input type="checkbox" class="lowercase-option" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <span>Include Numbers</span>
+        <label class="switch">
+          <input type="checkbox" class="numbers-option" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-row">
+        <span>Include Symbols</span>
+        <label class="switch">
+          <input type="checkbox" class="symbols-option">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+    </div>
+
+    <button class="generate-btn">GENERATE PASSWORD</button>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
