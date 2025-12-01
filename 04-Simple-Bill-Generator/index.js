@@ -43,6 +43,7 @@ addItemButton.addEventListener("click", function () {
   itemNameInput.value = "";
   quantityInput.value = "";
   priceInput.value = "";
+  taxPercentInput.value = ""
 });
 
 function updateTable() {
@@ -60,6 +61,15 @@ function updateTable() {
     tableBody.appendChild(row);
   });
 }
+
+tableBody.addEventListener("click", function (e) {
+  if (e.target.classList.contains("delete-item")) {
+    const index = e.target.dataset.index;
+    items.splice(index, 1);
+    updateTable();
+    updateSummary();
+  }
+});
 
 function updateSummary() {
   let subtotal = 0;
