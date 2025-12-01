@@ -12,6 +12,7 @@ const taxAmountEl = document.querySelector(".tax-amount");
 const finalTotalEl = document.querySelector(".final-total");
 const printButton = document.querySelector(".print-bill");
 const clearAllButton = document.querySelector(".clear-all");
+const message = document.querySelector('.message')
 
 addItemButton.addEventListener("click", function () {
   const itemName = itemNameInput.value;
@@ -20,7 +21,7 @@ addItemButton.addEventListener("click", function () {
   console.log(itemName, quantity, price);
 
   if (!itemName || !quantity || !price) {
-    alert("enter valid item details");
+    message.textContent = "Please enter item details!";
     return;
   }
 

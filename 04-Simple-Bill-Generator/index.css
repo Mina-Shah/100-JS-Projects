@@ -41,6 +41,12 @@ section {
   border-bottom: 1px solid #ddd;
 }
 
+.message{
+  color: red;
+  display: flex;
+  justify-content:c;
+  margin-bottom: 15px;
+}
 input[type="text"],
 input[type="number"] {
   padding: 8px 10px;
