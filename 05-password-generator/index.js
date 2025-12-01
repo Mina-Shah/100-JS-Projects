@@ -39,7 +39,6 @@ function generatePassword() {
         message.textContent = ''
     }
    
-
   let password = ''
 
   for (let i = 0; i < lengthSlider.value; i++) {
@@ -47,10 +46,8 @@ function generatePassword() {
     password += allowedChars[randomIndex]  
   }
   
-//  passwordOutput = password
   passwordOutput.value = password
   console.log(password);
-  
 }
 
 generateBtn.addEventListener('click', function() {

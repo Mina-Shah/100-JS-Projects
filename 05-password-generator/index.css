@@ -9,20 +9,23 @@ body {
 
 .container {
   background: #0f1230;
-  width: 350px;
+  width: 400px;
   padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   color: white;
   margin-top: 40px;
 }
 
 .container h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
 }
-.message{
-  color: rgb(243, 64, 64);
+.message {
+  color: rgb(243, 74, 74);
+  display: flex;
+  justify-content: center;
+  min-height: 20px;
 }
 /* Password display box */
 .password-box input {
@@ -128,4 +131,10 @@ body {
   background: linear-gradient(90deg, #6b6bff, #b56dff);
   cursor: pointer;
   font-size: 15px;
+}
+
+@media (max-width:425px) {
+    .container{
+      max-width: 250px;
+    }
 }
