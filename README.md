@@ -7,7 +7,7 @@ Welcome to **100-JS-Projects**, a collection of mini JavaScript projects to shar
 ## Projects List
 
 1. **Todo List**  
-   A simple app to add, edit, and delete tasks with local storage support.
+   A simple app to add, edit, and delete tasks.
 
 2. **Color Picker**  
    An interactive color picker to choose and copy color codes.
