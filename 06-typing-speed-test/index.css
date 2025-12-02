@@ -1,0 +1,109 @@
+/* ---- GLOBAL RESET ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: black; 
+  color: #e6f1ff;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  height: 100vh;
+}
+
+/* ---- MAIN CONTAINER ---- */
+.typing-test-container {
+  width: 100%;
+  max-width: 850px;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: yellow; 
+  margin-bottom: 25px;
+}
+
+/* ---- TEST BOX ---- */
+.test-box {
+  color: #252427; 
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ---- PARAGRAPH ---- */
+.paragraph {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: #d9e6ff;
+  min-height: 200px;
+  border: 1px solid white;
+}
+
+/* highlight correct / wrong letters */
+.paragraph span.correct {
+  color: #64ffda;
+}
+.paragraph span.incorrect {
+  color: #ff6b6b;
+  background: #3a1e1e;
+  border-radius: 2px;
+}
+
+/* ---- INPUT FIELD ---- */
+.typing-input {
+  width: 100%;
+  margin-top: 18px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  background: #1b1b1b;
+  color: white;
+  border: 1px solid white;
+  resize: none;
+  height: 80px;
+  outline: none;
+}
+
+/* ---- STATS ---- */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  font-size: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stats p {
+  color: #a8b2d1;
+  font-size: 15px;
+}
+
+/* ---- BUTTON ---- */
+.restart-btn {
+  background: yellow;;
+  border: none;
+  padding: 8px 18px;
+  font-size: 15px;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.restart-btn:hover {
+  background: rgb(231, 231, 65);
+}
