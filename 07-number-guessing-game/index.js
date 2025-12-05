@@ -28,6 +28,8 @@ guessBtn.addEventListener("click", function () {
     restartBtn.style.display = "block";
   } else if (numberValue < secretNumber) {
     message.textContent = "Too low! Try again.";
+        message.className = "red";
+
   } else {
 
     message.textContent = "Too high! Try again";
