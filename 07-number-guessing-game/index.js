@@ -1,5 +1,4 @@
 let secretNumber = Math.floor(Math.random() * 100) + 1;
-console.log(secretNumber);
 let attempts = 0;
 
 const guessInput = document.querySelector("#guessInput");
@@ -11,7 +10,6 @@ const restartBtn = document.querySelector("#restartBtn");
 guessBtn.addEventListener("click", function () {
   let guessValue = guessInput.value;
   const numberValue = Number(guessValue);
-  console.log(numberValue);
 
   if (!guessValue) {
     message.textContent = "Please enter a number";
@@ -20,26 +18,23 @@ guessBtn.addEventListener("click", function () {
   attempts++;
 
   if (numberValue === secretNumber) {
-
     message.textContent = "🎉 Correct! You guessed it!";
-        message.className = "green";
+    message.className = "green";
     attemptsDisplay.textContent = `Attempts: ${attempts}`;
     guessBtn.disabled = true;
     restartBtn.style.display = "block";
   } else if (numberValue < secretNumber) {
     message.textContent = "Too low! Try again.";
-        message.className = "red";
-
+    message.className = "red";
   } else {
-
     message.textContent = "Too high! Try again";
-    message.className = 'red';
+    message.className = "red";
   }
   attemptsDisplay.textContent = `Attempts: ${attempts}`;
 });
 
 restartBtn.addEventListener("click", function () {
-    attempts = 0;
+  attempts = 0;
   attemptsDisplay.textContent = `Attempts: 0`;
   secretNumber = Math.floor(Math.random() * 100) + 1;
   guessInput.value = "";
